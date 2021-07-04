@@ -1,0 +1,101 @@
+body {font-family: "Lato", sans-serif;}
+
+.sidebar {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #FBFCFC;
+  overflow-x: hidden;
+  padding-top: 16px;
+  text-align: center;
+  box-shadow: 8px 0 10px -10px black;
+}
+
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #111;
+  display: block;
+}
+
+.sidebar a:hover {
+  background-color: #AED6F1;
+}
+
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  padding: 0px 10px;
+}
+
+
+.navbar {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.div1 {
+  width: 60%;
+  height: 20px;
+  border: 1px solid black;
+  border-radius: 5px 5px 5px 5px;
+  margin: auto;
+  padding: 5px;
+  background-color: white;
+}
+
+.center {
+  margin: auto;
+    width: 10%;
+    height: 100px;
+    /*border: 1px solid black;*/
+    padding: 20px;
+    background-color: white;
+}
+
+.insert-url-input{
+  width: 50%;
+    height: 30px;
+    border: 0;
+    border-radius: 5px;
+    padding: 0px 10px;
+}
+
+.insert-url-input::placeholder{
+  color: black;
+  opacity: 1;
+}
+
+input[type="file"] {
+  display: none;
+}
+.custom-file-upload {
+  margin-left: 24%;
+  display: inline-block;
+  width: 100px;
+  height: 30px;
+  border: 0;
+  border-radius: 5px;
+  padding: 25px 10px;
+  cursor: pointer;
+  background-color: white;
+}
+
+.background{
+  margin-left: 0%;
+  background-color: #e7e9eb;
+  height: 100vh;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+
